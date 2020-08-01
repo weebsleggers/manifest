@@ -6,6 +6,10 @@
            review="review.bootleggersrom.xyz"
            revision="refs/heads/queso" />
 
+  <remote  name="weebsleggers"
+	   fetch="https://github.com/weebsleggers"
+	   revision="refs/heads/queso" />
+
   <remote  name="bootleg-devices"
            fetch="https://github.com/BootleggersROM-Devices"
            revision="refs/heads/queso" />
@@ -53,20 +57,20 @@
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="bootleggers" />
-  <project path="frameworks/base" name="frameworks_base" remote="bootleggers" />
+  <project path="frameworks/base" name="frameworks_base" remote="weebsleggers" />
   <project path="frameworks/native" name="frameworks_native" remote="bootleggers" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/tools-bootleg" name="prebuilts_tools-bootleg" remote="bootleggers" clone-depth="1" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="bootleggers" />
+  <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="weebsleggers" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="bootleggers" />
   <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="bootleggers" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="bootleggers" />
   <project path="packages/apps/Phonograph" name="packages_apps_Phonograph" remote="bootleggers" />
-  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="bootleggers" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="bootleggers" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="weebsleggers" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="weebsleggers" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="bootleggers" />
   <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="bootleggers" />
@@ -85,6 +89,6 @@
   <project path="system/vold" name="system_vold" remote="bootleggers" />
 
   <!-- Vendor -->
-  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="bootleggers" />
+  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="weebsleggers" />
 
 </manifest>
